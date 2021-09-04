@@ -1,6 +1,5 @@
 import './App.css';
 import React, { useState , useEffect} from 'react';
-import axios from "axios"
 import io from "socket.io-client";
 
 const socket=io("159.65.227.200:3001", {transports: ["websocket","polling"]} );
