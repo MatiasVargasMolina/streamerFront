@@ -2,7 +2,7 @@ import './App.css';
 import React, { useState , useEffect} from 'react';
 import io from "socket.io-client";
 
-const socket=io("159.65.227.200:3001", {transports: ["websocket","polling"]} );
+const socket=io("http://159.65.227.200:3001/", {transports: ["websocket","polling"]} );
 function App() {
   const [streamer1, setStreamers1]=useState("");
   const [streamer2, setStreamers2]=useState("");
